@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section {
+  width: 100%;
+  height: auto;
+  padding: 2em;
+}
+.main-div {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.image-div {
+  background-image: url("../Images/image-1.png");
+  background-size: inherit;
+}
+.form-div {
+  padding: 3px;
+}
+.form {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.form .input-1,
+.input-2 {
+  display: flex;
+  flex-direction: column;
+}
+.input-1 label,
+.input-2 label {
+  font-size: 19px;
+  font-weight: 300;
+  margin: 10px 0;
+  font-family: "Roboto", sans-serif;
+  color: grey;
+}
+.input-1 input,
+.input-2 input {
+  padding: 12px;
+  border: none;
+  border-radius: 22px;
+  background-color: whitesmoke;
+  font-size: 17px;
+}
+.input-1 input:focus,
+.input-2 input:focus {
+  outline: none;
+}
+.input-1 small,
+.input-2 small {
+  margin: 3px;
+  padding: 3px;
+  font-size: 14px;
+  color: red;
+  font-family: "Roboto", sans-serif;
+}
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+}
+.forgot-password a {
+  text-decoration: none;
+  color: green;
+  font-family: "Roboto", sans-serif;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 8px;
+}
+.button input {
+  padding: 12px 50px;
+  border-radius: 22px;
+  font-size: 15px;
+  background-color: teal;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.headings {
+  margin: 0 10px 10px;
+  padding: 10px;
+}
+.headings .heading-1 {
+  text-align: center;
+  margin: 0 10px 10px;
+  padding: 8px;
+}
+.headings .heading-1 h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 45px;
+  font-weight: 900;
+}
+.headings .heading-2 {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+}
+.headings .heading-2 h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: grey;
+}
+.or {
+  text-align: center;
+}
+.or p {
+  font-family: "Roboto", sans-serif;
+}
+.alternate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+}
+.alternate img {
+  margin-right: 7px;
+}
+.alternate p {
+  font-family: "Roboto", sans-serif;
+}
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+}
+.new p,
+a {
+  font-family: "Roboto", sans-serif;
+  color: grey;
+}
+.input-1 .error {
+  border: 2px solid red;
+}
+.input-2 .error {
+  border: 2px solid red;
+}
+@media screen and (max-width: 800px) {
+  .section {
+    padding: 1em 0;
+  }
+  .main-div {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main-div {
+    max-width: 70%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image-div {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-div {
+    width: 95%;
+  }
+}
